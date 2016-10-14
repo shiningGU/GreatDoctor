@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NearbyHospitalCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="复旦大学复中华山医院" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5g-gA-qFK">
+                        <rect key="frame" x="8" y="8" width="250" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="07a-GF-h9A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海市乌鲁木齐中路12号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdB-6a-2XR">
+                        <rect key="frame" x="8" y="35" width="250" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="TEk-Tq-ehF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.25193339650000002" green="0.25193339650000002" blue="0.25193339650000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4000米" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auE-fV-vIl">
+                        <rect key="frame" x="266" y="19" width="46" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="DDD-eu-g39"/>
+                            <constraint firstAttribute="width" constant="46" id="HUv-4q-6NP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.25193339650000002" green="0.25193339650000002" blue="0.25193339650000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rdB-6a-2XR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="5lO-45-EWb"/>
+                    <constraint firstItem="auE-fV-vIl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="Cvc-8b-Ayv"/>
+                    <constraint firstItem="auE-fV-vIl" firstAttribute="leading" secondItem="q5g-gA-qFK" secondAttribute="trailing" constant="8" id="O2L-JR-VpC"/>
+                    <constraint firstItem="q5g-gA-qFK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="W7f-XC-LCE"/>
+                    <constraint firstItem="rdB-6a-2XR" firstAttribute="top" secondItem="q5g-gA-qFK" secondAttribute="bottom" constant="3" id="cbz-1K-S3j"/>
+                    <constraint firstItem="auE-fV-vIl" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="gak-u6-a4a"/>
+                    <constraint firstItem="q5g-gA-qFK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="jBa-Yh-Y4w"/>
+                    <constraint firstItem="auE-fV-vIl" firstAttribute="leading" secondItem="rdB-6a-2XR" secondAttribute="trailing" constant="8" id="oZN-8r-cYv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="distance" destination="auE-fV-vIl" id="tKs-Nl-Pc9"/>
+                <outlet property="hospitalAddress" destination="rdB-6a-2XR" id="ZFW-QK-70d"/>
+                <outlet property="hospitalName" destination="q5g-gA-qFK" id="23G-qF-8rI"/>
+            </connections>
+            <point key="canvasLocation" x="360" y="360"/>
+        </tableViewCell>
+    </objects>
+</document>

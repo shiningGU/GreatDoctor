@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="healthyNews" id="KGk-i7-Jjw" customClass="HealthynewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="run.png" translatesAutoresizingMaskIntoConstraints="NO" id="4sO-Rl-neQ">
+                        <rect key="frame" x="8" y="5" width="91" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="91" id="UoK-1a-Pke"/>
+                            <constraint firstAttribute="height" constant="70" id="aQk-xb-lpl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="夜跑所需要的七大技巧！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpa-CL-p6t">
+                        <rect key="frame" x="107" y="8" width="205" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="L3r-tV-1mZ"/>
+                            <constraint firstAttribute="width" secondItem="Wpa-CL-p6t" secondAttribute="height" multiplier="205:38" id="zZb-Iy-L4y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="资讯" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCp-4W-Wsp">
+                        <rect key="frame" x="107" y="50" width="36" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="MIB-a1-qGT"/>
+                            <constraint firstAttribute="width" constant="36" id="v5M-DY-j7K"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.61013406386927993" green="0.40659520321408438" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阅读 127" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHf-ro-i5t">
+                        <rect key="frame" x="156" y="54" width="156" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="0Ti-Is-SzI"/>
+                            <constraint firstAttribute="width" secondItem="LHf-ro-i5t" secondAttribute="height" multiplier="52:7" id="Kl8-a4-Gtm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.70121133209999997" green="0.70121133209999997" blue="0.70121133209999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4sO-Rl-neQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="83H-Vx-jHa"/>
+                    <constraint firstItem="eCp-4W-Wsp" firstAttribute="leading" secondItem="4sO-Rl-neQ" secondAttribute="trailing" constant="8" id="Udl-Jg-rNG"/>
+                    <constraint firstItem="Wpa-CL-p6t" firstAttribute="leading" secondItem="4sO-Rl-neQ" secondAttribute="trailing" constant="8" id="Wrj-cR-jrS"/>
+                    <constraint firstItem="LHf-ro-i5t" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="YLK-TQ-upr"/>
+                    <constraint firstItem="LHf-ro-i5t" firstAttribute="top" secondItem="Wpa-CL-p6t" secondAttribute="bottom" constant="8" id="cVv-EM-op5"/>
+                    <constraint firstItem="4sO-Rl-neQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="htr-Ff-79q"/>
+                    <constraint firstItem="Wpa-CL-p6t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="sog-is-EqY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lookNumLabel" destination="LHf-ro-i5t" id="C0B-JH-IX0"/>
+                <outlet property="pictureView" destination="4sO-Rl-neQ" id="jUb-eP-kpJ"/>
+                <outlet property="titleLabel" destination="Wpa-CL-p6t" id="Xy3-W8-bO3"/>
+                <outlet property="typeLabel" destination="eCp-4W-Wsp" id="TrY-K5-L9b"/>
+            </connections>
+            <point key="canvasLocation" x="314" y="366"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="run.png" width="1000" height="667"/>
+    </resources>
+</document>
